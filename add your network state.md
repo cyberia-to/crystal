@@ -1,0 +1,15 @@
+---
+tags: cyberia
+crystal-type: process
+crystal-domain: cyberia
+---
+make a pull request to [this repo](https://github.com/cyber-valley/cvland/)
+
+checklist
+
+- dedicated page for network state
+- link to the dedicated page on [[network states]] page
+
+have [[startup society]]?
+
+- [[add your startup society]]

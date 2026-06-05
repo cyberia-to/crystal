@@ -1,10 +1,9 @@
 ---
-alias: links, linking, edge, edges
+icon: 🔗
 tags: cyber, core
+alias: cyberlink, cyberlinks, unit of knowledge, cyberlinking
 crystal-type: relation
 crystal-domain: cyber
-crystal-size: enzyme
+crystal-size: bridge
 ---
-directed edge between two nodes in a [[graph]]. a [[cyberlink]] is a link that achieved [[finality]] in the [[cybergraph]] — local intent turned global [[knowledge]]
-
-discover all [[concepts]]
+the atomic unit of [[knowledge]]: a staked assertion binding two [[particles]]. five fields $(p, q, \tau, a, v)$. the signing neuron $\nu$ and block height $t$ belong to the containing [[signal]]. see [[cybergraph/reference/cyberlink]].

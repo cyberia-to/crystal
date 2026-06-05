@@ -1,42 +1,94 @@
 ---
-icon: ⚪️
 tags: cyber, core
-alias: find truth, compute truth, answer truth, truth consensus
-crystal-type: property
+alias: two factor truth, two layer truth, structural epistemic truth, truth model
+crystal-type: pattern
 crystal-domain: cyber
-crystal-size: bridge
 ---
-[[consensus]] on the probability of [[observation]]. the [[tru]] computes it, [[cyberank]] measures it, [[focus]] prices it. what survives the [[tri-kernel]] is what the [[cybergraph]] calls true
+truth in the [[cybergraph]] has two irreducible components. neither alone is sufficient. together they define what the network calls true
 
-reproducibility is the criterion: [[signals]] that do not replicate across independent [[observations]] lose [[focus]] at each iteration. the [[tri-kernel]] is a filter — unreliable [[knowledge]] decays, reproducible [[knowledge]] compounds
+| factor | form | source | question answered |
+|--------|------|--------|-------------------|
+| structural | binary — the [[cyberlink]] exists | one [[neuron]]'s signed assertion | what is connected to what? |
+| epistemic | continuous — [[coupling]] price $\in (0,1)$ | all market participants | how much does the collective believe this connection? |
+
+the structural layer is permanent and append-only — a link that exists cannot be deleted, only economically muted. the epistemic layer is dynamic — the market price shifts continuously as new [[neurons]] buy [[true]] or [[false]] positions on the edge
 
 ---
 
-## truth in the cybergraph
+## why two factors
 
-truth is not declared. it is not polled. it is the [[focus]] distribution $\phi^*$ — the fixed point of the [[tri-kernel]] over all [[cyberlinks]], weighted by [[karma]] and market price. the truth of a particle $p$ is its probability under $\phi^*$: how likely the network's collective attention lands on $p$ given the full structure of the graph.
+a single-factor truth model fails in one of two directions
 
-this is probabilistic truth, not binary truth. a particle does not become true or false — it acquires a degree of collective attention that reflects how well-connected, structurally consistent, and epistemically confirmed it is. particles that many [[neurons]] link to, from diverse contexts, with high [[valence]] and market confirmation, accumulate high $\phi^*(p)$.
+structural only: all [[cyberlinks]] weighted by stake alone. $\phi^*$ reflects link count and economic weight, but the graph cannot distinguish a well-supported theorem from well-funded spam. the [[tri-kernel]] converges — but possibly to a false attractor. there is no inhibitory signal
 
-truth has two layers:
+epistemic only: markets over propositions with no underlying link structure. the market has no substrate — nothing to trade on. belief without assertion is formless
 
-| layer | what | signal |
-|-------|------|--------|
-| structural | the [[cyberlink]] exists | binary — topology |
-| epistemic | the network believes the link | $m(\ell) \in (0,1)$ — [[inversely coupled bonding surface\|ICBS]] market price |
+the two-factor model resolves this: the structural link creates the question. the epistemic market discovers the answer. the [[cyberlink]] asserts "A relates to B." the [[coupling]] market over that edge asks "does the collective believe A relates to B?" the price that emerges is the second truth factor
 
-both layers are necessary. a link that exists but the market disbelieves is suppressed in [[effective adjacency]] toward zero weight — structurally present, epistemically muted. a belief without a structural link has nothing to evaluate. see [[two kinds of knowledge]].
+## the formal account
 
-## why truth converges
+the effective weight of an edge in the [[tri-kernel]]:
 
-the [[tri-kernel]] has a unique fixed point $\phi^*$ under ergodicity ([[Perron-Frobenius theorem|Perron-Frobenius]]). the truth signal is objective in the only sense that matters: independent agents starting from different initial distributions converge to the same $\phi^*$ if they share the same link set $L$.
+$$A^{\text{eff}}_{pq} = \sum_{\substack{\ell \in L \\ \text{src}(\ell)=p,\;\text{tgt}(\ell)=q}} a(\ell)\cdot\kappa(\nu(\ell))\cdot f(m(\ell))$$
 
-this is the graph-theoretic analog of reproducibility. a cyberlink is epistemically true if independent market participants, evaluating the same structural link from their own private signals, converge on a high ICBS price for it. truth = convergence. noise = divergence. [[syntropy]] $J(\phi^*) = D_{KL}(\phi^* \| u)$ measures how far the collective has moved from noise.
+factor one: $a(\ell)$ — stake on the structural assertion (economic weight of the binary fact)
 
-## the [[honest majority assumption]] and truth
+factor two: $m(\ell) \in (0,1)$ — [[coupling]] reserve ratio (market-implied probability the link is valid), transformed by $f$
 
-truth in the [[cybergraph]] is conditional on an honest majority: if more than half of staked [[neurons]] act with genuine private knowledge — truthful [[valence]], accurate predictions — the system converges toward epistemic truth. the defense is not assumption but mechanism: [[Bayesian Truth Serum]] makes honest reporting the individually optimal strategy, and [[karma]] weights future contributions by past accuracy. the honest majority assumption becomes self-reinforcing when honesty is the dominant strategy.
+the two factors multiply. a high-stake link the market disbelieves is suppressed toward zero. a low-stake link the market strongly confirms is amplified through [[karma]] and market confidence. the truth signal is the product of conviction and collective validation
 
-see [[truthful]] for what it means for a [[neuron]] to be truthful. see [[truth model]] for the formal two-layer account. see [[veritas]] for the continuous truth emergence protocol. see [[Bayesian Truth Serum]] for the scoring mechanism.
+## the ternary bridge
+
+between binary structure and continuous belief sits [[valence]] $v \in \{-1, 0, +1\}$ — the coarse epistemic signal provided at link creation. it is not a third truth factor but the seed that initializes the market. the [[neuron]]'s prediction of where the [[coupling]] market will settle, expressed in three states, before the collective has spoken
+
+the full truth model: binary structure → ternary seed → continuous market → [[focus]] distribution $\phi^*$. each layer requires the one below it
+
+## valence strategy
+
+[[valence]] is part of the [[attention]] pipeline — predictions are the first unit of collective [[attention]] on an edge's truth value
+
+| Strategy | What happens | Payoff |
+|----------|-------------|--------|
+| [[true]] (v=+1) | seeds market toward TRUE. if correct, effective weight starts high immediately | accuracy × time — early correct prediction compounds [[prob]] from block T |
+| [[false]] (v=-1) | seeds market toward FALSE. same mechanics, opposite direction | same — early correct suppression compounds |
+| [[void]] (v=0) | balanced market. waits for others to trade | safe but slow — misses N blocks of directional [[prob]] accumulation |
+
+the payoff is accuracy × time. being right early compounds. being right late earns less. being wrong costs blocks of suppressed weight. being void is free but slow
+
+a [[neuron]] with no private [[knowledge]] should play [[void]] — avoids the penalty of guessing wrong. a [[neuron]] with genuine conviction should predict — the first-mover advantage on market seeding is the reward for private [[knowledge]]
+
+this is the attention yield curve — but it emerges naturally from the mechanics rather than being a designed reward formula. early accurate conviction → early market seeding → early effective weight → more blocks of [[prob]] accumulation → higher [[karma]]. the physics does it
+
+## the truth block
+
+### attractors
+
+| | |
+|---|---|
+| [[true]] | market → 1 — edge validated, [[focus]] flows |
+| [[void]] | market → 0.5 — no signal, channel open but empty |
+| [[false]] | market → 0 — edge suppressed, [[focus]] blocked |
+
+### mechanisms
+
+| | |
+|---|---|
+| [[valence]] | the ternary seed — +1 / 0 / -1 at link creation |
+| [[serum]] | honesty [[equilibrium]] via [[valence]] meta-predictions |
+| [[coupling]] | the market mechanism — TRUE and FALSE geometrically coupled |
+| [[inhibition]] | how markets provide the inhibitory signal raw links cannot |
+| [[cost]] | why [[will]] cost makes [[cyberlinks]] honest |
+| [[cyber/truth/honesty|honesty]] | why [[neurons]] act honestly — cost + serum + coupling compound |
+| [[cyber/truth/market|market]] | the unified 2/3 architecture — topology + market + meta-prediction |
+
+### lineage
+
+| | |
+|---|---|
+| [[two kinds of knowledge]] | structural vs epistemic — why two factors are irreducible |
+| [[true-false problem]] | why global [[cyberank]] alone cannot answer contextual questions |
+| [[standard inference]] | the naive first solution — [[will]]-weighted context scoring |
+
+see [[truth]] for the convergent signal both factors produce
 
 discover all [[concepts]]

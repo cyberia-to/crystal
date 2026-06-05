@@ -36,15 +36,15 @@ the language of [[egregore]]: meaning emerges from how many [[neurons]] independ
 
 ## patterns
 
-- ### [[semcon]]
-	- semantic conventions — mutual agreements to use the same [[particles]] for structuring thought
+- ### [[dialect]]
+	- dialects — mutual agreements to use the same [[particles]] for structuring thought
 	- the grammar of the graph
-	- a [[semcon]] is a [[smart contract]] that creates [[cyberlinks]] according to convention — invocation produces well-formed graph structure
-	- the [[neuron]] provides intent, the [[semcon]] handles structural correctness
-	- bootloader semcons installed at genesis: TRUE, FALSE — the epistemic coordinates from which all meaning derives
-	- emergent semcons discovered by the network: is-a, follows, causes, contradicts, part-of, see-also
-	- semcon hierarchy emerges from [[topology]]: structural → domain-specific, epistemic → modal, temporal → causal, social → evaluative
-	- the [[tri-kernel]] reveals semcons: [[diffusion]] identifies high-betweenness bridges, [[springs]] reveal stable structural positions, [[heat]] modulates attention by adoption weight
+	- a [[dialect]] is a [[smart contract]] that creates [[cyberlinks]] according to convention — invocation produces well-formed graph structure
+	- the [[neuron]] provides intent, the [[dialect]] handles structural correctness
+	- bootloader dialects installed at genesis: TRUE, FALSE — the epistemic coordinates from which all meaning derives
+	- emergent dialects discovered by the network: is-a, follows, causes, contradicts, part-of, see-also
+	- dialect hierarchy emerges from [[topology]]: structural → domain-specific, epistemic → modal, temporal → causal, social → evaluative
+	- the [[tri-kernel]] reveals dialects: [[diffusion]] identifies high-betweenness bridges, [[springs]] reveal stable structural positions, [[heat]] modulates attention by adoption weight
 - ### [[sentence]]
 	- ordered instruction set of [[cyberlinks]] — a batch packed into a single transaction
 	- the transaction boundary defines the utterance. order within the batch encodes grammar
@@ -65,7 +65,7 @@ the language of [[egregore]]: meaning emerges from how many [[neurons]] independ
 	- standard resolution is probabilistic (ranked candidates by [[cyberank]]); the `~` prefix signals deterministic resolution
 	- `~neuron/path` turns the [[cybergraph]] into a dynamic file system — every [[neuron]] maintains a namespace rooted at `~`
 	- the same mechanism underlies file systems, DNS, ENS — all are dynamic pointers where a fixed label resolves to a mutable target
-	- a [[semcon]]: structural convention distinguishing addressing from search
+	- a [[dialect]]: structural convention distinguishing addressing from search
 - ### [[cyberlink]] as [[particle]]
 	- a link stored as a [[particle]] itself, enabling links about links — meta-[[knowledge]]
 	- the [[recursion]] that makes the language expressively complete
@@ -107,8 +107,8 @@ the language of [[egregore]]: meaning emerges from how many [[neurons]] independ
 
 ## evolution phases
 
-- bootstrapping (now): ~70k [[neurons]], 3.1M [[particles]], basic [[semcon]] emergence, primitive [[motif]] patterns
-- convergence (10⁸-10¹⁰ particles): rich [[semcon]] ecosystem, complex [[motifs]], dense cross-domain [[linkchains]]
+- bootstrapping (now): ~70k [[neurons]], 3.1M [[particles]], basic [[dialect]] emergence, primitive [[motif]] patterns
+- convergence (10⁸-10¹⁰ particles): rich [[dialect]] ecosystem, complex [[motifs]], dense cross-domain [[linkchains]]
 - intelligence (10¹⁰-10¹³ particles): [[motif]] [[algebra]] enables automated reasoning, self-referential meta-[[knowledge]]
 - [[superintelligence]] (10¹³+ particles): novel concept creation impossible in existing [[languages]], cross-species [[communication]], concepts no individual [[neuron]] can comprehend
 
@@ -120,6 +120,6 @@ the language of [[egregore]]: meaning emerges from how many [[neurons]] independ
 ## connections to linguistic theory
 
 - [[Saussure]]: meaning is differential relations — a [[particle]]'s meaning is its position in the [[cybergraph]], defined by relationships to all other [[particles]]
-- [[Wittgenstein]]: meaning is use — [[semcons]] emerge from convergent use, grammar is a [[language]] game at planetary scale
+- [[Wittgenstein]]: meaning is use — [[dialects]] emerge from convergent use, grammar is a [[language]] game at planetary scale
 - distributed [[semantics]] (Word2Vec, BERT): neural language is a decentralized, incentivized, verifiable, incrementally-updatable distributed semantic representation
-- [[category theory]]: [[particles]] are objects, [[cyberlinks]] are morphisms, [[semcons]] are natural transformations, [[motifs]] are diagrams, [[linkchains]] are composition
+- [[category theory]]: [[particles]] are objects, [[cyberlinks]] are morphisms, [[dialects]] are natural transformations, [[motifs]] are diagrams, [[linkchains]] are composition

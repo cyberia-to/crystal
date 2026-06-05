@@ -11,7 +11,7 @@ is inherently relative concept
 
 more
 
-- [[semantic convention]]
+- [[dialect]]
 - [[semantic neural proofs]]
 - [[semantic core]]
 - [[semantic cosmwasm]]

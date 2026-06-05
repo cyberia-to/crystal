@@ -17,7 +17,7 @@ reference rust implementation of [[compiled transformers spec|CT-1]]. reads a [[
 .graph (cybergraph snapshot) ──► mc ──► .model (transformer checkpoint)
 ```
 
-mc executes the eight passes from the spec — vocabulary, semcon discovery, architecture parameters, embedding matrix, per-semcon attention, MLP from random walks, norms, and `.model` packaging. the output is loadable by `~/git/cyb/llm` runtime directly via mmap.
+mc executes the eight passes from the spec — vocabulary, dialect discovery, architecture parameters, embedding matrix, per-dialect attention, MLP from random walks, norms, and `.model` packaging. the output is loadable by `~/git/cyb/llm` runtime directly via mmap.
 
 ## crate layout
 
@@ -34,7 +34,7 @@ cyb/mc/
 │   │   └── record.rs        # Signal (44B header + 105B×n links), SignalIter
 │   ├── pass/
 │   │   ├── pass1_index.rs   # particle index + CSR adjacency
-│   │   ├── pass2_semcon.rs  # semcon discovery + per-axon assignment
+│   │   ├── pass2_dialect.rs  # dialect discovery + per-axon assignment
 │   │   ├── pass3_arch.rs    # π* power iteration, rSVD d*, Lanczos λ2, BFS diam
 │   │   ├── pass4_embed.rs   # embedding matrix E via seeded rSVD
 │   │   ├── pass5_attn.rs    # Q/K/V/O per layer (random init fallback)
@@ -58,7 +58,7 @@ cyber-hemera = { path = "../../hemera/rs" }  # Poseidon2 over Goldilocks — CID
 rand_chacha = "0.3"       # deterministic RNG
 toml_edit = "0.22"        # frontmatter parsing
 memmap2 = "0.9"           # zero-copy graph load
-rayon = "1"               # parallel per-semcon SVDs
+rayon = "1"               # parallel per-dialect SVDs
 clap = "4"                # CLI
 cyb-format = { path = "../cyb/llm" }  # .model writer from cyb-llm crate
 ```
@@ -93,10 +93,10 @@ curl -s https://node.bostrom.cybernode.ai/cyber/graph/snapshot?block=23195000 \
 
 - [x] crate skeleton, `.graph` mmap reader, `.model` writer scaffolding
 - [x] pass 1: particle index + CSR adjacency (hemera axon hashing)
-- [x] pass 2: semcon discovery (usage × log coverage scoring)
+- [x] pass 2: dialect discovery (usage × log coverage scoring)
 - [x] pass 3: power iteration for π*, randomized SVD for d*, Lanczos for λ2, BFS diameter
 - [x] pass 4: embedding matrix E via seeded randomized SVD
-- [x] pass 5: per-semcon attention Q/K/V/O (random init fallback when no typed links)
+- [x] pass 5: per-dialect attention Q/K/V/O (random init fallback when no typed links)
 - [x] pass 6: signal-respecting walks, PMI co-occurrence, SVD factorization
 - [x] pass 7: all-ones layer norms
 - [x] pass 8: `.model` file packaging (card/config/program/tensors/vocab/eval/weights)

@@ -5,11 +5,11 @@ crystal-type: entity
 crystal-domain: cyber
 ---
 
-the type system and semantic convention layer that emerges from [[cyberlink]] [[topology]]
+the type system and dialect layer that emerges from [[cyberlink]] [[topology]]
 
 ## emergence
 
-patterns of linking create implicit types, categories, and relationships — structure from connectivity. when many [[neurons]] consistently link [[particles]] of one kind to particles of another kind, a semantic convention crystallizes without explicit schema definition
+patterns of linking create implicit types, categories, and relationships — structure from connectivity. when many [[neurons]] consistently link [[particles]] of one kind to particles of another kind, a dialect crystallizes without explicit schema definition
 
 ## role in cyber
 

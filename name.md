@@ -1,24 +1,60 @@
 ---
-tags: cyber, core
+tags: cyber
 crystal-type: entity
 crystal-domain: cyber
-crystal-size: enzyme
-alias: names, naming, deterministic resolution
+alias: deterministic resolution
 ---
-the `~` [[cyberlink]] that turns a [[particle]] into a [[file]] — deterministic resolution giving raw [[information]] a human tongue. every [[neuron]] keeps a namespace rooted at `~`
+resolution modes of [[name]] in the [[cybergraph]]
 
-a [[name]] in [[cyber]] is a special [[cyberlink]] using the `~` relation type. it binds a human-readable string to a [[particle]], creating a path that resolves deterministically to content.
+a [[cyberlink]] is a dynamic pointer: from [[particle]] resolves to a ranked set of to [[particles]]. standard resolution is probabilistic — the [[convergence vm]] returns candidates sorted by [[cyberank]]. a name is a [[cyberlink]] that resolves deterministically: given from, return exactly one to — the latest [[particle]] linked by the owning [[neuron]]
 
-every [[neuron]] owns a personal namespace anchored at `~`. within that namespace, the [[neuron]] can assign names freely — `~documents/report`, `~images/logo` — building a personal [[file]] system on top of the [[knowledge graph]].
+the same mechanism underlies every naming system: [[file]] systems map paths to inodes, [[DNS]] maps domains to IP addresses, ENS maps .eth to wallets. all are dynamic pointers where a fixed label resolves to a mutable target. in the [[cybergraph]] this is native — a [[cyberlink]] already is a dynamic pointer, the only question is the resolution mode
 
-naming is the bridge between [[content addressing]] and human cognition. [[particles]] are identified by [[hashes]] — long, opaque strings. names give those hashes readable labels that humans can remember and share.
+| mode | returns | use |
+|------|---------|-----|
+| probabilistic | ranked set of [[particles]] by [[cyberank]] | search, discovery, inference |
+| deterministic | single [[particle]], last linked by owner | naming, addressing, file system |
 
-resolution follows a deterministic path: given a [[neuron]] address and a name, the protocol resolves to exactly one [[particle]]. there is no ambiguity, no DNS lookup, no central registry.
+## the ~ prefix
 
-names are mutable references to immutable content. a [[neuron]] can update a name to point to a new [[particle]], creating versioning. the old [[particle]] persists; only the name pointer moves.
+the `~` prefix signals deterministic resolution
 
-the naming layer transforms the flat space of [[hashes]] into a navigable hierarchy. it is the moment raw [[information]] gains a human interface.
+```
+probabilistic:  cyber             → ranked particles
+deterministic:  ~mastercyb/blog   → single latest particle
+```
 
-see [[name/resolution]]
+`~` is borrowed from Unix home directories — the [[neuron]] is the home, the path after it is a [[linkchain]] of names owned by that [[neuron]]. this turns the [[cybergraph]] into a dynamic file system where every [[neuron]] maintains a namespace rooted at `~`
+
+## mechanics
+
+a name is a [[cyberlink]] where:
+
+1. from [[particle]] is the name label (content-addressed string, e.g. hash of "blog")
+2. to [[particle]] is the current value (any [[particle]] — a page, an image, a program)
+3. resolution picks the to of the latest [[cyberlink]] from this [[neuron]] for this from
+
+updating a name means creating a new [[cyberlink]] with the same from and a different to. the old value remains in history. the latest wins
+
+## as dialect
+
+name is a [[dialect]] — a structural convention where [[neurons]] agree that certain [[cyberlinks]] are dynamic pointers meant for deterministic resolution rather than probabilistic search. the `~` prefix is the syntactic marker of this convention
+
+## examples
+
+```
+~mastercyb/avatar     → QmCurrentAvatarCID
+~mastercyb/blog       → QmLatestBlogPostCID
+~mastercyb/config     → QmCurrentConfigCID
+~jooy/public-key      → QmJooyPubKeyCID
+```
+
+any [[neuron]] can resolve any other [[neuron]]'s names — the namespace is public, the write access is private (only the owning [[neuron]] can update)
+
+## relation to .moon names
+
+[[.moon names]] are the [[bostrom]] [[bootloader]] implementation of this concept — purchased identities that map human-readable labels to [[neurons]]. names generalize this: every [[neuron]] gets an unlimited namespace for free, addressing any [[particle]] in the [[cybergraph]]
+
+probabilistic resolution is search. deterministic resolution is addressing. both emerge from the same primitive — the [[cyberlink]] — distinguished only by a [[dialect]] prefix. the [[cybergraph]] unifies search engines and file systems into a single structure
 
 discover all [[concepts]]

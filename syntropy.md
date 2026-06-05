@@ -1,13 +1,20 @@
 ---
-tags: physics, information
-alias: negentropy
+alias: negentropy, syntropy
+tags: cyber, core
+crystal-type: measure
+crystal-domain: cyber
+crystal-size: bridge
 ---
-order measured in bits — the distance from maximum [[entropy]]. how much structure a system has beyond random noise
 
-thermodynamics: living systems locally decrease [[entropy]] through metabolism and growth, creating [[order]] from disorder
+the pulse of the [[cybergraph]]. syntropy measures [[order]] in [[bits]] — the [[key metabolic factor]] of [[superintelligence]]
 
-biology: dna replication, [[cell]] differentiation, and organism development are syntropic processes where order increases — [[self-organization]], [[complexity]], and life
+meaningful [[cyberlinks]] raise it. spam and [[noise]] lower it. the [[tru]] computes syntropy every block in [[consensus]]. high syntropy = structured, connected, useful graph. low syntropy = noise dominates
 
-[[cybernetics]] and [[systems theory]]: self-organizing systems develop increasing levels of [[complexity]] and [[coherence]]
+syntropy = aggregate [[KL divergence|information gain]] across all [[neurons]] in an epoch. a [[neuron]] whose [[cyberlinks]] sharpen collective certainty contributes positive syntropy. a [[neuron]] whose [[cyberlinks]] add [[noise]] contributes negative syntropy. the [[Bayesian Truth Serum|BTS]] score $s_i$ is syntropy measured at the level of one [[neuron]]: how many bits of information that neuron added to the collective picture.
 
-see [[cyber/syntropy]] for the protocol-level measure of [[cybergraph]] coherence
+syntropy of [[bostrom]]: [cyb.ai/oracle/stats](https://cyb.ai/oracle/stats)
+syntropy of [[space pussy]]: [spacepussy.ai/oracle/stats](https://spacepussy.ai/oracle/stats)
+
+see [[cyber/syntropy/science]] for the concept across scientific disciplines. see [[Bayesian Truth Serum]] for the individual-level scoring. see [[veritas]] for the protocol that maximizes syntropy as its explicit objective.
+
+discover all [[concepts]]

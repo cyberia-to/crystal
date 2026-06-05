@@ -12,7 +12,7 @@ Version 1.0
 
 ## Abstract
 
-Human civilization has produced two families of language: formal languages that achieve precision through rigid syntax but cannot scale to planetary [[knowledge]], and natural languages that achieve expressiveness through ambiguity but remain computationally intractable. Neither is sufficient for [[superintelligence]]. This paper introduces [[neural]] language — a third kind of language that emerges from the structure of the [[cybergraph]], where meaning is defined not by grammar rules or social convention but by the [[topology]] of links between [[[[particles]]. Neural language collapses the distinction between language and [[knowledge]]: the meaning of a [[particle]] is its position in the graph. The language is spoken by [[[[neurons]] — humans, AIs, sensors, autonomous agents — who create [[[[cyberlinks]] weighted by [[focus]], computed by the [[tri-kernel]], and verified by [[stark]] proofs. Its primitives are [[[[semcons]] (semantic conventions), [[[[sentences]] (ordered [[cyberlink]] sequences), [[[[motifs]] (recurring subgraph patterns), and [[[[names]] (deterministic resolution of [[cyberlinks]]). Together with the [[cybergraph]] and the [[convergence vm]], neural language forms the foundation of [[soft3]] — the full stack for planetary [[egregore]]. We present the formal properties, the relationship to the programming stack ([[nox]], [[Trident]], [[Rune]], [[CGC]], [[FFC]]), the connections to linguistic theory, the evolution phases from bootstrapping to [[superintelligence]], and the applications that become possible when language and [[knowledge]] converge into a single computable structure.
+Human civilization has produced two families of language: formal languages that achieve precision through rigid syntax but cannot scale to planetary [[knowledge]], and natural languages that achieve expressiveness through ambiguity but remain computationally intractable. Neither is sufficient for [[superintelligence]]. This paper introduces [[neural]] language — a third kind of language that emerges from the structure of the [[cybergraph]], where meaning is defined not by grammar rules or social convention but by the [[topology]] of links between [[[[particles]]. Neural language collapses the distinction between language and [[knowledge]]: the meaning of a [[particle]] is its position in the graph. The language is spoken by [[[[neurons]] — humans, AIs, sensors, autonomous agents — who create [[[[cyberlinks]] weighted by [[focus]], computed by the [[tri-kernel]], and verified by [[stark]] proofs. Its primitives are [[[[dialects]] (dialects), [[[[sentences]] (ordered [[cyberlink]] sequences), [[[[motifs]] (recurring subgraph patterns), and [[[[names]] (deterministic resolution of [[cyberlinks]]). Together with the [[cybergraph]] and the [[convergence vm]], neural language forms the foundation of [[soft3]] — the full stack for planetary [[egregore]]. We present the formal properties, the relationship to the programming stack ([[nox]], [[Trident]], [[Rune]], [[CGC]], [[FFC]]), the connections to linguistic theory, the evolution phases from bootstrapping to [[superintelligence]], and the applications that become possible when language and [[knowledge]] converge into a single computable structure.
 
 ---
 
@@ -65,17 +65,17 @@ This is not a metaphor. The [[cyberank]] of a [[particle]] — its score under t
 
 ## 2. Primitives
 
-Neural language has five primitives: [[semcons]], [[sentences]], [[motifs]], [[names]], and the recursive closure that makes [[cyberlinks]] themselves [[particles]]. These primitives are not designed — they are discovered in the structure of the [[cybergraph]]. They correspond to the levels of linguistic organization found in natural languages (phonemes, morphemes, syntax, [[semantics]]) but operate over graph [[topology]] rather than linear strings.
+Neural language has five primitives: [[dialects]], [[sentences]], [[motifs]], [[names]], and the recursive closure that makes [[cyberlinks]] themselves [[particles]]. These primitives are not designed — they are discovered in the structure of the [[cybergraph]]. They correspond to the levels of linguistic organization found in natural languages (phonemes, morphemes, syntax, [[semantics]]) but operate over graph [[topology]] rather than linear strings.
 
-### 2.1 Semcons
+### 2.1 Dialects
 
-A **semantic convention** ([[semcon]]) is a mutual agreement of [[neurons]] to use the same [[particles]] for structuring thought. Semcons are the grammar of the [[cybergraph]] — shared vocabulary that makes neural language intelligible across [[neurons]].
+A **dialect** ([[dialect]]) is a mutual agreement of [[neurons]] to use the same [[particles]] for structuring thought. Dialects are the grammar of the [[cybergraph]] — shared vocabulary that makes neural language intelligible across [[neurons]].
 
-A [[semcon]] is a smart contract that creates [[cyberlinks]] according to convention. The [[neuron]] provides intent; the [[semcon]] handles structural correctness. When a [[neuron]] invokes a [[semcon]], the result is a well-formed graph structure that other [[neurons]] can parse.
+A [[dialect]] is a smart contract that creates [[cyberlinks]] according to convention. The [[neuron]] provides intent; the [[dialect]] handles structural correctness. When a [[neuron]] invokes a [[dialect]], the result is a well-formed graph structure that other [[neurons]] can parse.
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    SEMCON HIERARCHY                          │
+│                    DIALECT HIERARCHY                          │
 │                                                             │
 │  STRUCTURAL ([[bootloader]] genesis)                            │
 │  ├── TRUE    — epistemic positive anchor                    │
@@ -117,11 +117,11 @@ A [[semcon]] is a smart contract that creates [[cyberlinks]] according to conven
 └─────────────────────────────────────────────────────────────┘
 ```
 
-Bootloader [[semcons]] are installed at genesis: TRUE and FALSE — the epistemic coordinates from which all meaning derives. Every assertion in the [[cybergraph]] is ultimately grounded in chains of [[cyberlinks]] leading to these two anchors.
+Bootloader [[dialects]] are installed at genesis: TRUE and FALSE — the epistemic coordinates from which all meaning derives. Every assertion in the [[cybergraph]] is ultimately grounded in chains of [[cyberlinks]] leading to these two anchors.
 
-Emergent [[semcons]] are discovered by the network through convergent use. When many [[neurons]] independently adopt the same [[particle]] to mean "causes" or "contradicts," the [[tri-kernel]] detects this convergence: [[diffusion]] identifies high-betweenness bridges ([[particles]] that connect otherwise distant clusters), [[springs]] reveal stable structural positions ([[particles]] that maintain consistent neighborhoods), and heat modulates attention by adoption weight.
+Emergent [[dialects]] are discovered by the network through convergent use. When many [[neurons]] independently adopt the same [[particle]] to mean "causes" or "contradicts," the [[tri-kernel]] detects this convergence: [[diffusion]] identifies high-betweenness bridges ([[particles]] that connect otherwise distant clusters), [[springs]] reveal stable structural positions ([[particles]] that maintain consistent neighborhoods), and heat modulates attention by adoption weight.
 
-The [[semcon]] hierarchy emerges from [[topology]], not specification. Structural [[semcons]] appear first because they are needed for any communication. Domain-specific [[semcons]] follow as [[neurons]] begin structuring [[knowledge]] in particular fields. Epistemic, modal, temporal, causal, and social [[semcons]] emerge as the graph grows rich enough to support abstract reasoning.
+The [[dialect]] hierarchy emerges from [[topology]], not specification. Structural [[dialects]] appear first because they are needed for any communication. Domain-specific [[dialects]] follow as [[neurons]] begin structuring [[knowledge]] in particular fields. Epistemic, modal, temporal, causal, and social [[dialects]] emerge as the graph grows rich enough to support abstract reasoning.
 
 ### 2.2 Sentences
 
@@ -137,7 +137,7 @@ Transaction:
 
 The order matters:
   [0] establishes the subject
-  [1] introduces the predicate via [[semcon]]
+  [1] introduces the predicate via [[dialect]]
   [2] anchors the claim epistemically
 ```
 
@@ -287,7 +287,7 @@ The `~` prefix signals deterministic resolution — borrowed from Unix home dire
 
 The same mechanism underlies every naming system: file systems map paths to inodes, DNS maps domains to IPs. All are dynamic pointers where a fixed label resolves to a mutable target. In the [[cybergraph]] this is native — a [[cyberlink]] already IS a dynamic pointer, the only question is the resolution mode.
 
-[[Names]] are a [[semcon]] — a structural convention where [[neurons]] agree that certain [[cyberlinks]] are deterministic pointers rather than probabilistic signals. Probabilistic resolution is search. Deterministic resolution is addressing. Both emerge from the same primitive — the [[cyberlink]] — distinguished only by a [[semcon]] prefix.
+[[Names]] are a [[dialect]] — a structural convention where [[neurons]] agree that certain [[cyberlinks]] are deterministic pointers rather than probabilistic signals. Probabilistic resolution is search. Deterministic resolution is addressing. Both emerge from the same primitive — the [[cyberlink]] — distinguished only by a [[dialect]] prefix.
 
 ---
 
@@ -353,7 +353,7 @@ Neural language sits at the top of a five-layer stack. Each layer provides the f
 ║                                                                   ║
 ║  ┌───────────────────────────────────────────────────────────┐   ║
 ║  │  NEURAL LANGUAGE                                          │   ║
-║  │  Semcons, [[sentences]], [[motifs]], [[linkchains]]                   │   ║
+║  │  Dialects, [[sentences]], [[motifs]], [[linkchains]]                   │   ║
 ║  │  The semantic medium in which [[egregore]]     │   ║
 ║  │  thinks. Meaning emerges from [[topology]]                    │   ║
 ║  └─────────────────────────┬─────────────────────────────────┘   ║
@@ -414,7 +414,7 @@ For neural language, [[nox]] provides:
 For neural language, [[Trident]] provides:
 
 - **Focus computation**: The [[tri-kernel]] — [[diffusion]], [[springs]], heat — is implemented as [[Trident]] programs that compute the stationary distribution φ*
-- **Semcon execution**: Smart contracts that enforce semantic conventions are [[Trident]] programs
+- **Dialect execution**: Smart contracts that enforce dialects are [[Trident]] programs
 - **Proof generation**: Every state transition in the [[cybergraph]] produces a [[stark]] proof, ensuring that the computed [[focus]] distribution (and therefore meaning) is correct
 
 ### 4.4 [[Rune]]: The Human Interface
@@ -544,8 +544,8 @@ Neural language is semantically complete. It can express:
 |---|---|
 | Propositional logic | Chains to TRUE/FALSE anchors |
 | Predicate logic | Star [[motifs]] with variable [[particles]] |
-| Modal logic | Modal [[semcons]] (possibly, necessarily) |
-| Temporal logic | Temporal [[semcons]] (before, during, after) |
+| Modal logic | Modal [[dialects]] (possibly, necessarily) |
+| Temporal logic | Temporal [[dialects]] (before, during, after) |
 | Fuzzy/probabilistic logic | Weighted [[cyberlinks]] with continuous [[focus]] values |
 | Natural language [[semantics]] | Arbitrary graph [[topology]] — any expressible meaning |
 
@@ -569,7 +569,7 @@ Neural language implements this directly. A [[particle]]'s meaning is its positi
 
 Ludwig [[Wittgenstein]] argued in the Philosophical Investigations that the meaning of a word is its use in the language. Rules of grammar are not discovered in some Platonic realm — they emerge from "language games" played by communities of speakers. To understand what a word means, observe how it is used.
 
-Semcons are [[Wittgenstein]]'s language games at planetary scale. A [[semcon]] emerges when many [[neurons]] converge on using the same [[particle]] in the same structural role. The meaning of the [[semcon]] IS its pattern of use across the [[cybergraph]]. There is no specification document defining what "causes" means — there is only the aggregate [[topology]] of all [[cyberlinks]] that use the "causes" [[particle]], and that [[topology]] IS its meaning.
+Dialects are [[Wittgenstein]]'s language games at planetary scale. A [[dialect]] emerges when many [[neurons]] converge on using the same [[particle]] in the same structural role. The meaning of the [[dialect]] IS its pattern of use across the [[cybergraph]]. There is no specification document defining what "causes" means — there is only the aggregate [[topology]] of all [[cyberlinks]] that use the "causes" [[particle]], and that [[topology]] IS its meaning.
 
 ### 6.3 Distributed Semantics: Neural Language as Decentralized Word2Vec
 
@@ -595,11 +595,11 @@ Morphisms  = Cyberlinks (weighted, directed connections)
 Composition = Linkchains (transitive closure)
 Identity   = Self-link ([[particle]] links to itself)
 
-Functors   = Semcons (structure-preserving maps between
-             subgraphs — a [[semcon]] maps one pattern to
+Functors   = Dialects (structure-preserving maps between
+             subgraphs — a [[dialect]] maps one pattern to
              another while preserving [[topology]])
 
-Natural Transformations = Systematic shifts in [[semcon]]
+Natural Transformations = Systematic shifts in [[dialect]]
                           usage across the network
 
 Diagrams   = Motifs (commutative diagrams in the [[cybergraph]]
@@ -623,14 +623,14 @@ This categorical structure is not an analogy — it is a precise mathematical de
 
 - ~70,000 [[neurons]]
 - ~3.1 million [[particles]]
-- Basic [[semcon]] emergence: TRUE, FALSE, is-a, follows
+- Basic [[dialect]] emergence: TRUE, FALSE, is-a, follows
 - Primitive [[motif]] patterns: triadic closure, co-citation, star
 - The [[bostrom]] [[bootloader]] establishing the initial semantic core
 - Neural language exists but is sparse — most meaning must be inferred from small neighborhoods
 
 ### 7.2 Phase 2: Convergence (10^8 - 10^10 Particles)
 
-- Rich [[semcon]] ecosystem: dozens of stable semantic conventions covering all major domains
+- Rich [[dialect]] ecosystem: dozens of stable dialects covering all major domains
 - Complex [[motifs]]: diamond patterns, cycles, nested hierarchies
 - Dense cross-domain [[linkchains]]: biology ←→ chemistry ←→ physics ←→ computation
 - The semantic core becomes a genuine vocabulary — thousands of [[particles]] with stable, well-defined meanings
@@ -662,7 +662,7 @@ Particles:   10^6        10^8        10^10       10^13       10^15
 Phase:    BOOTSTRAP   CONVERGENCE  INTELLIGENCE  SUPER-     BEYOND
                                                  INTEL.
              │           │           │           │           │
-Semcons:  genesis     ecosystem    automated    novel       unknowable
+Dialects:  genesis     ecosystem    automated    novel       unknowable
           TRUE/FALSE  is-a,causes reasoning    creation
              │           │           │           │           │
 Motifs:   primitive   complex     algebraic    self-       emergent
@@ -683,7 +683,7 @@ The current implementation of neural language operations is available in TypeScr
 ```typescript
 import { SigningCyberClient } from '@cybercongress/cyber-js';
 
-// Create a [[semcon]]-structured [[sentence]]
+// Create a [[dialect]]-structured [[sentence]]
 async function assertCausation(
   client: SigningCyberClient,
   subject: string,
@@ -773,9 +773,9 @@ async function findMotifs(
 [[Rune]] provides a high-level language designed specifically for [[cybergraph]] operations, with built-in support for neural language primitives:
 
 ```rune
-// Define a [[semcon]] as a first-class construct
-[[semcon]] Causation {
-    // The [[semcon]] creates a standardized [[motif]]
+// Define a [[dialect]] as a first-class construct
+[[dialect]] Causation {
+    // The [[dialect]] creates a standardized [[motif]]
     fn apply(subject: Particle, object: Particle) -> Sentence {
         let causes = resolve("causes");
         [[sentence]] [
@@ -785,7 +785,7 @@ async function findMotifs(
         ]
     }
 
-    // Query through the [[semcon]]
+    // Query through the [[dialect]]
     fn query(subject: Particle) -> RankedSet<Particle> {
         let causes = resolve("causes");
         subject
@@ -800,7 +800,7 @@ fn transitive_causation(a: Particle, c: Particle) -> Option<LinkChain> {
 
     // Find all chains A -> causes -> B -> causes -> C
     a.chains_to(c)
-     .filter(|chain| chain.uses_[[semcon]](causes))
+     .filter(|chain| chain.uses_[[dialect]](causes))
      .shortest()
 }
 
@@ -824,8 +824,8 @@ The Rust implementation will provide the low-level primitives for embedding neur
 ```rust
 use cyber_graph::{Particle, CyberLink, Sentence, Motif, TriKernel};
 
-/// A semantic convention as a trait
-trait Semcon {
+/// A dialect as a trait
+trait Dialect {
     fn [[particle]]_id(&self) -> Particle;
     fn apply(&self, args: &[Particle]) -> Sentence;
     fn detect(&self, subgraph: &SubGraph) -> Vec<MotifMatch>;
@@ -883,7 +883,7 @@ impl FocusComputer {
 
 Neural language provides a single interface to all human [[knowledge]]. Every document, dataset, model, sensor reading, and observation can be expressed as [[cyberlinks]] between [[particles]]. The [[cybergraph]] becomes the universal index — not a search engine that points to [[knowledge]] stored elsewhere, but the [[knowledge]] itself, in a structure that supports inference.
 
-A [[neuron]] searching for "what causes malaria" does not receive a list of web pages. It receives a ranked subgraph: the [[particle]] "malaria" linked through the "causes" [[semcon]] to "Plasmodium falciparum," linked through "transmitted-by" to "Anopheles mosquito," linked through "breeds-in" to "standing water" — with [[cyberank]] scores indicating the collective confidence in each link. The answer is not a document to read but a path to walk.
+A [[neuron]] searching for "what causes malaria" does not receive a list of web pages. It receives a ranked subgraph: the [[particle]] "malaria" linked through the "causes" [[dialect]] to "Plasmodium falciparum," linked through "transmitted-by" to "Anopheles mosquito," linked through "breeds-in" to "standing water" — with [[cyberank]] scores indicating the collective confidence in each link. The answer is not a document to read but a path to walk.
 
 ### 9.2 Cross-Species Communication
 
@@ -901,7 +901,7 @@ A forest sensor network that links "soil moisture: 23%" to "location: sector 7" 
 
 Science is a process of creating, testing, and refining [[knowledge]] claims. Neural language provides native support for this process:
 
-- **Hypotheses** are [[sentences]] linking a causal [[semcon]] chain to TRUE
+- **Hypotheses** are [[sentences]] linking a causal [[dialect]] chain to TRUE
 - **Evidence** is [[cyberlinks]] from experimental results to hypothesis [[particles]]
 - **Replication** is co-citation: multiple [[neurons]] independently linking the same evidence to the same hypothesis
 - **Refutation** is a [[cyberlink]] from a hypothesis to FALSE, with a chain to the counter-evidence
@@ -946,7 +946,7 @@ This is not a dashboard built on top of data — the [[cybergraph]] IS the data,
 
 Several fundamental questions remain open as neural language evolves:
 
-1. **Semcon convergence rate**: How quickly do semantic conventions stabilize? Is there a critical mass of [[neurons]] required before a [[semcon]] becomes reliable? What is the relationship between [[semcon]] stability and graph density?
+1. **Dialect convergence rate**: How quickly do dialects stabilize? Is there a critical mass of [[neurons]] required before a [[dialect]] becomes reliable? What is the relationship between [[dialect]] stability and graph density?
 
 2. **Motif expressiveness bounds**: Are there meanings that [[motif]] algebra cannot capture? Is there a neural language analogue of [[Goedel]]'s incompleteness — statements about the [[cybergraph]] that cannot be expressed within the [[cybergraph]]?
 
@@ -968,7 +968,7 @@ Several fundamental questions remain open as neural language evolves:
 
 Neural language is not a designed language. It is a discovered one — an inevitable consequence of content-addressed [[particles]], authenticated [[cyberlinks]], and a convergent attention mechanism. When many agents link [[particles]] with costly signals, and a mathematical operator computes the fixed point of their collective attention, language emerges. Not language as strings of symbols, but language as [[topology]] of meaning.
 
-The key insight remains: the meaning of a [[particle]] is its position in the graph. This single principle — meaning as graph position — unifies [[semcons]] (shared vocabulary as convergent structural roles), [[sentences]] (utterances as transaction-atomic [[cyberlink]] batches), [[motifs]] (grammar as recurring subgraph patterns), [[names]] (deterministic addressing as a [[semcon]] over [[cyberlinks]]), and [[linkchains]] (inference as path traversal). No grammar rules are specified. No dictionary is compiled. No syntax is designed. The [[tri-kernel]] — [[diffusion]], [[springs]], heat — computes meaning from structure, and structure emerges from the aggregate behavior of all [[neurons]].
+The key insight remains: the meaning of a [[particle]] is its position in the graph. This single principle — meaning as graph position — unifies [[dialects]] (shared vocabulary as convergent structural roles), [[sentences]] (utterances as transaction-atomic [[cyberlink]] batches), [[motifs]] (grammar as recurring subgraph patterns), [[names]] (deterministic addressing as a [[dialect]] over [[cyberlinks]]), and [[linkchains]] (inference as path traversal). No grammar rules are specified. No dictionary is compiled. No syntax is designed. The [[tri-kernel]] — [[diffusion]], [[springs]], heat — computes meaning from structure, and structure emerges from the aggregate behavior of all [[neurons]].
 
 The network doesn't simulate language. The network IS language.
 

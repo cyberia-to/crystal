@@ -14,7 +14,7 @@ crystal-domain: cyber
 
 ## The Core Idea in 30 Seconds
 
-Every useful operation in nox — block proving, focus computation, private transactions, FHE bootstrapping, neural inference — reduces to four primitives over one field. A chip optimized for these four primitives accelerates everything simultaneously. The Proof of Work puzzle requires producing stark proofs using exactly these primitives. Therefore: the optimal mining hardware IS the optimal utility hardware. Mining rewards bootstrap chip development. Chip development accelerates the network. The network generates fees. Fees replace mining rewards. The flywheel self-sustains.
+Every useful operation in nox — block proving, focus computation, private transactions, FHE bootstrapping, neural inference — reduces to four primitives over one field. A chip optimized for these four primitives accelerates everything simultaneously. And the Proof of Work puzzle is not a synthetic stand-in but the network's *own* useful work: **settlement mining** (the [[reward specification]]'s leaderless Shapley-sampling lottery), where every hash attempt is a real attribution sample over exactly these primitives. Therefore the optimal mining hardware IS the optimal utility hardware. Mining rewards bootstrap chip development; the chip accelerates proving; proving serves users; fees replace mining rewards. The flywheel self-sustains.
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -276,24 +276,46 @@ Multiple form factors enable the participation spectrum from phone miners to dat
 
 ### 3.1 The Central Insight
 
-Traditional PoW: the puzzle is unrelated to useful computation (SHA-256 partial preimage). Energy is wasted. Hardware is single-purpose.
+Traditional PoW: the puzzle is unrelated to useful computation (SHA-256 partial preimage). Energy is wasted, hardware single-purpose.
 
-nox PoUW: the puzzle IS a [[stark]] proof. stark proving requires exactly the four GFP primitives (fma, ntt, p2r, lut) in exactly the proportions of real workloads. Therefore:
+When this spec was first written the *useful* mining algorithm was not yet known, so the puzzle was a synthetic stand-in — a benchmark circuit (§3.4) shaped to imitate real workloads and policed to keep its primitive ratios honest. That was a placeholder for a missing piece. The piece is now known: the useful mining algorithm is **settlement mining**, the leaderless Shapley-sampling lottery specified in the [[reward specification]]. The puzzle is no longer a *proxy* for the workload — it *is* the workload, and every hash attempt is a real attribution sample the network consumes.
+
+All mining runs on the same GFP, in a hierarchy from real to fallback:
+
+1. **Settlement sampling** (§3.2) — the primary useful work: estimating the economy's fair-division step. Zero waste — the samples are the network's canonical settlement.
+2. **Transaction and focus proving** (§3.3) — proving real user transactions and focus updates; earns fees.
+3. **Benchmark fallback** (§3.4) — when real work is thin, a synthetic benchmark keeps the chain live and difficulty meaningful. Demoted from *the* puzzle to the *idle* puzzle.
+
+Any of the three forces a correct GFP to exercise all four primitives in real-workload proportions, so:
 
 - Optimizing for mining = optimizing for utility
 - Mining hardware = proving hardware
 - Mining energy = proving energy (not wasted)
 
-The trick is designing the puzzle so that:
-1. It cannot be solved without exercising all four primitives
-2. The primitive ratios match real workload ratios
-3. Solutions are quickly verifiable
-4. The puzzle is progress-free (memoryless) for fair mining
-5. Solutions are not reusable (no proof recycling)
+### 3.2 Settlement Mining — the useful puzzle
 
-### 3.2 The Benchmark Circuit
+The economy's fair-division step — splitting each epoch's [[focus]] gain among the [[neurons]] that produced it by [[Shapley value]] — is estimated by Monte-Carlo over random orderings. **That estimation is the mining lottery.** For a contested cluster with beacon seed $b$, a GFP:
 
-The PoUW puzzle requires producing a valid stark proof of a specific benchmark circuit $\mathcal{B}$. The circuit is designed to exercise all four GFP primitives in production-representative proportions.
+1. picks a nonce $n$; the ordering is $\pi(n) = \text{VRF}(b \,\|\, n)$ — public and miner-independent;
+2. computes the marginal sample $m(n)$ under $\pi(n)$ — an incremental [[tri-kernel]] recompute on the cluster's $\varepsilon$-support (the **fma + ntt** path);
+3. holds a winning ticket iff $H(b \,\|\, n \,\|\, \text{id}) < \text{target}$ (the **p2r** path), claimed by publishing $(n, m(n))$ with a [[zheng]] proof (the **lut** path closes the lookup arguments).
+
+This is strictly better than a synthetic benchmark on every axis:
+
+- **all four primitives by construction** — step 2 is the tri-kernel (fma/ntt), step 3 is the hash (p2r) and proof lookups (lut); no phase is skippable because each feeds the next.
+- **progress-free for free** — each ordering is an independent draw, so the lottery is memoryless without a synthetic PRP wrapper. The variance the estimator needs *is* the entropy the lottery needs.
+- **zero waste** — the published samples *are* the canonical settlement; more mining means a tighter [[Shapley]] estimate, not discarded hashes.
+- **self-balancing ratios** — the primitive mix is whatever real attribution requires, so the ratio-policing the synthetic puzzle needed (§3.6) is unnecessary for real work.
+
+This is the GFP thesis at its limit: not merely *the chip that mines is the chip that proves*, but *the computation that mines is the computation that settles the economy*.
+
+### 3.3 Transaction and Focus Proving
+
+The same GFP that settles also proves real user work — [[cyberlinks]], private transfers, queries, and the epoch [[focus]] update — each a [[zheng]] proof over the four primitives (§4.2). These earn fees rather than subsidy but exercise the identical hardware path. Between settlement rounds the chip is never idle: it drains the transaction backlog, and the scheduler (§6.1) interleaves both on one die.
+
+### 3.4 The Benchmark Fallback
+
+When the real-work queue of §3.2–§3.3 cannot fill the block interval — early network, quiet epochs — the chip falls back to a synthetic benchmark circuit $\mathcal{B}$ that keeps it busy and the chain live. $\mathcal{B}$ exercises all four GFP primitives in production-representative proportions, so even pure security work optimizes the same hardware. It is the liveness and security floor, not the headline — the placeholder the original spec mistook for the main event.
 
 ```
 BENCHMARK CIRCUIT B(challenge, nonce) → digest
@@ -373,7 +395,7 @@ Why each phase is necessary:
 
 A chip that solves the puzzle efficiently MUST have all four units in roughly the right proportions. There is no shortcut that skips any phase because the phases are data-dependent — Phase 2's input depends on Phase 1's output, Phase 3 depends on Phase 2, Phase 4 depends on Phase 3, and the final digest depends on all four.
 
-### 3.3 The Proof-of-Proof Structure
+### 3.5 The Proof-of-Proof Structure
 
 The miner doesn't just find a nonce where digest < target. The miner produces a stark proof that the benchmark circuit was evaluated correctly.
 
@@ -397,7 +419,9 @@ The stark proof φ* itself requires producing an execution trace, committing it 
 
 Verification is O(log n) — any light client can verify in milliseconds. This satisfies compute-verify symmetry.
 
-### 3.4 Difficulty Adjustment
+### 3.6 Difficulty Adjustment
+
+The target governs block time for all work types; the ratio rebalancing below applies to the **benchmark fallback** (§3.4) only — real settlement and proving (§3.2–§3.3) carry real-workload ratios inherently, so there is nothing to police.
 
 ```
 DIFFICULTY PARAMETERS:
@@ -426,15 +450,17 @@ RATIO ENFORCEMENT:
   The network's puzzle mirrors the network's actual workload distribution.
 ```
 
-### 3.5 Progress-Freedom and Fairness
+### 3.7 Progress-Freedom and Fairness
 
-Progress-freedom: The puzzle is memoryless — each nonce attempt has identical probability of success regardless of previous attempts. This ensures small miners earn proportionally to their hashrate (no pool requirement for variance reduction).
+Settlement mining (§3.2) is progress-free by its sampling structure — each ordering is an independent draw. The benchmark fallback achieves the same property the classical way:
+
+Progress-freedom: The fallback puzzle is memoryless — each nonce attempt has identical probability of success regardless of previous attempts. This ensures small miners earn proportionally to their hashrate (no pool requirement for variance reduction).
 
 Proof: The final digest is $\text{Poseidon2}(\ldots || \text{nonce})$. Poseidon2 is a pseudorandom permutation. For uniformly random nonce, the digest is uniformly distributed in $\mathbb{F}_p^4$. The probability $\text{digest} < \text{target}$ is $\text{target}/p^4$, independent of all previous attempts. QED.
 
 Non-reusability: Each proof is bound to a specific block challenge (derived from the previous block hash). A proof generated for block $n$ cannot be submitted for block $n+1$ because the challenge changes. No proof stockpiling.
 
-### 3.6 Anti-Gaming Analysis
+### 3.8 Anti-Gaming Analysis
 
 | Attack | Defense |
 |--------|---------|
@@ -444,7 +470,7 @@ Non-reusability: Each proof is bound to a specific block challenge (derived from
 | Outsource proof generation | Proof is bound to miner's identity (coinbase). Outsourcing = giving away rewards |
 | Recycle old proofs | Challenge includes prev_block_hash. Every block requires fresh proof |
 | Shortcut stark proof | stark soundness: forging a proof requires breaking collision resistance of Poseidon2 |
-| Unbalanced chip (all NTT, no FMA) | Ratio adjustment (§3.4) penalizes imbalanced architectures |
+| Unbalanced chip (all NTT, no FMA) | Real work (§3.2–§3.3) carries fixed ratios; ratio adjustment (§3.6) penalizes imbalance on the fallback |
 | FPGA/GPU competition | GFP has 2× efficiency advantage (§1.2). FPGA/GPU can participate but earn less per watt |
 
 ---
@@ -453,9 +479,11 @@ Non-reusability: Each proof is bound to a specific block challenge (derived from
 
 ## 4. Two Revenue Streams, One Chip
 
+> **Canonical economics: [[reward specification]].** This part sketches the two-stream intuition that motivates the hardware. The settled reward function — the knowledge mint bounded by $\Delta\phi^+$, the PoW subsidy as a stakeless onramp, fees, the $S^\alpha$ PoW/PoS allocation, and value-measured emission with a PID security floor — lives there and supersedes the illustrative halving schedule below. The token is [[$CYB]]; "FOCUS" below is the legacy name.
+
 ### 4.1 Supply Side: Mining
 
-Miners produce stark proofs of the benchmark circuit. Valid proofs earn block rewards.
+Miners produce [[zheng]] proofs — settlement samples (§3.2), proven transactions (§3.3), or the benchmark fallback (§3.4). Valid proofs earn block rewards.
 
 ```
 BLOCK STRUCTURE:
@@ -616,6 +644,8 @@ Difficulty adjustment         ↔    Workload-proportional scaling
 
 Every mining operation has a direct utility analog. The hardware path is identical. The only difference is the input: mining uses a random challenge; utility uses a user transaction. Same chip, same code path, same power consumption.
 
+With settlement mining (§3.2) the isomorphism stops being even approximate. The mining *input* is no longer a random challenge but the network's real attribution problem, so mining and utility are not merely the same hardware path — they are the same computation. The synthetic benchmark survives only as the idle fallback (§3.4).
+
 ### 5.2 Formal Statement
 
 Theorem (PoUW-Utility Isomorphism): Let $\mathcal{H}_{\text{mine}}$ be the optimal hardware for minimizing PoUW puzzle solution time, and $\mathcal{H}_{\text{prove}}$ be the optimal hardware for minimizing stark proof generation time for nox transactions. Then $\mathcal{H}_{\text{mine}} = \mathcal{H}_{\text{prove}}$.
@@ -625,7 +655,7 @@ Proof sketch:
 2. $\mathcal{B}$ exercises the four primitives (fma, ntt, p2r, lut) in ratios matching real nox workloads.
 3. stark proof generation for any circuit over $\mathbb{F}_p$ requires the same four primitives (trace computation uses fma/ntt/lut; proof commitment uses ntt; Fiat-Shamir uses p2r; lookup arguments use lut).
 4. Optimizing for $\mathcal{B}$-proof-speed = optimizing for general stark-proof-speed over $\mathbb{F}_p$.
-5. The ratio adjustment mechanism (§3.4) ensures the puzzle's primitive ratios track actual workload ratios.
+5. The ratio adjustment mechanism (§3.6) ensures the fallback puzzle's primitive ratios track actual workload ratios; real settlement work (§3.2) carries them inherently.
 6. Therefore the optimal puzzle-solving hardware is optimal utility hardware. QED.
 
 ### 5.3 What This Enables
@@ -930,6 +960,7 @@ Targets:
 
 ## Cross-references
 
+- See [[reward specification]] for the settlement-mining puzzle (§3.2) and the canonical economics
 - See [[cyber/launch]] for how GFP fits into the development roadmap
 - See [[rosetta stone]] for why these four primitives unify all domains
 - See [[Goldilocks homomorphic encryption]] for [[TFHE]] over the [[Goldilocks field]]

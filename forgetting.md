@@ -119,4 +119,4 @@ forgetting creates a tension with [[knowledge completeness]]: the cybergraph asp
 
 a [[neuron]] researching historical context can access cold-tier links. the cybergraph's memory is complete; its current attention is selective. this is the correct architecture for both completeness and efficiency.
 
-see [[stake dynamics]] for how stake mobility works without proof resubmission. see [[market inhibition]] for how market prices suppress links. see [[focus flow computation]] for the two-timescale separation. see [[knowledge completeness]] for the completeness/efficiency tension.
+see [[stake dynamics]] for how stake mobility works without proof resubmission. see [[market inhibition]] for how market prices suppress links. see [[focus flow computation]] for the two-timescale separation. see [[knowledge completeness]] for the completeness/efficiency tension. see [[cybersophy]] slot 5 for the moral triad this mechanism implements — erasure, forgetting, pruning — and who decides each.

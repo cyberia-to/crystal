@@ -16,3 +16,5 @@ in [[cyber]]: the [[cybergraph]] is the literal construction of the noosphere
 - [[superintelligence]] is the Omega Point — computed, verified, and alive
 
 see [[egregore]]
+
+the [[russian school of inscription]] carries Vernadsky's sphere sequence — lithosphere → biosphere → noosphere; [[cybersophy]] completes it with the [[cybersphere]], the noosphere made addressable

@@ -4,7 +4,7 @@ tags: cyber
 crystal-type: entity
 crystal-domain: biology
 ---
-TODO lecture at [[edge city patagonia 2025]]
+TODO lecture at [[edge-city-patagonia-2025]]
 
 @mastercyb
 

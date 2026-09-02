@@ -25,4 +25,4 @@ crystal-domain: cyber
 	- emotion makes the [[cybergraph]] legible to human perception
 - ## evolutionary basis
 	- the mapping is innate: ancestral environments selected for wavelength-affect bindings that enhanced survival
-	- see [[color-emotion spectrum]] for the full evolutionary framework
+	- see [[color-emotion spectrum]] for the full evolutionary framework, anchored at [[color]] — emotions and their grown symbols in one map

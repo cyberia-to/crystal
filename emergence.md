@@ -45,4 +45,4 @@ optimal, +16% future-link predictability; g=1.0 loses the advantage).
 emergence is not the maximum of the loop, it is the loop's resonance —
 past resonance the loop optimizes the model's reflection, not the
 world's structure. the open question is how the optimal coupling g*(n)
-falls with size; raw data: honeycrisp/simulation/FINDINGS.md.
+falls with size; raw data: ~/cyber/simulation/FINDINGS.md.

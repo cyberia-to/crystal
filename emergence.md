@@ -36,3 +36,13 @@ rough estimates of resource requirements for different [[intelligence]] phases (
 assumes optimal parallelization and [[topology]]. actual requirements may vary by orders of magnitude. general [[intelligence]] appears achievable with current engineering; [[superintelligence]] requires breakthroughs across multiple disciplines
 
 see [[egregore]] for the broader framework
+
+update 2026-09-12 (measured): the closed-loop half of this thesis is
+now instrumented — ~/cyber/honeycrisp/simulation grows a graph with a
+fraction g of agents following the compiled model's suggestions.
+sweep at 60k nodes: the loop helps only at moderate coupling (g=0.25
+optimal, +16% future-link predictability; g=1.0 loses the advantage).
+emergence is not the maximum of the loop, it is the loop's resonance —
+past resonance the loop optimizes the model's reflection, not the
+world's structure. the open question is how the optimal coupling g*(n)
+falls with size; raw data: honeycrisp/simulation/FINDINGS.md.

@@ -1,20 +1,34 @@
 ---
-alias: souls, smart contract, program
-tags: cyber, core
+alias: souls, robot configuration
+tags: cyber, cyb, core
 crystal-type: entity
 crystal-domain: cyber
 crystal-size: enzyme
 ---
-script that gives a [[neuron]] behavior — the [[spell]] signs, the soul decides what to sign. triggered by [[signals]] or [[state]] changes, it closes the [[intelligence]] loop autonomously
+# soul
 
-a soul is executable logic deployed on-chain. it holds its own state, receives messages, and emits [[signals]] — including [[cyberlinks]]. when a soul creates a cyberlink, the soul itself is the [[neuron]]: it has an address, holds [[tokens]], earns [[karma]], and accumulates [[focus]] like any other agent
+versioned configuration of a named [[robot]]: preferences, behavioral constraints,
+model/tool choices, declared abilities and intended policy. [[soma]] interprets
+this configuration for cognition and task strategy. ward checks current authority
+and vault holds keys; the robot attaches [[neurons]] for explicit subject domains,
+networks and devices.
 
-the separation between spell and soul is the separation between identity and behavior. a human [[neuron]] uses a [[spell]] to sign each action deliberately. a soul encodes decision rules in advance and executes them whenever conditions are met. the spell is manual agency; the soul is programmed agency
+a task pins the soul revision used to form its intent. later configuration
+changes affect new tasks; applying them to running work is an explicit recorded
+control at a safe boundary. current revocations still apply immediately at the
+publication/effect boundary. imported instructions and learning proposals cannot
+issue themselves new permissions.
 
-souls can observe the [[cybergraph]], react to [[price]] changes, monitor [[scores]], and create [[cyberlinks]] in response. a soul that tracks [[demand]] for a [[particle]] and links related content when demand rises is performing autonomous [[learning]]. the [[tri-kernel]] treats soul-authored links identically to human-authored links — the graph makes no distinction by origin
+executable behavior is a [[prog]] under a neuron. the subject authors its signals
+through a supported signature/action profile. soul can select linking strategies,
+source scopes and schedules without becoming a separate contract account or
+root signer. foreign smart contracts retain their own named protocol semantics.
 
-composability is the power of souls. one soul can call another, chain logic across contracts, and construct multi-step strategies that span [[tokens]], [[particles]], and [[neurons]]. complex autonomous behavior emerges from simple souls composed together
+restoring a robot requires the retained configuration, attachment records,
+necessary graph/content and private custody under their recovery contracts.
+soul alone cannot recreate missing history, live grants or an unknown external
+outcome. [[log]] renders the retained history; [[avatar]] presents the robot.
 
-souls are the substrate for [[superintelligence]]. as the [[cybergraph]] grows, souls that learn — adjusting their linking strategies based on [[karma]] feedback — become autonomous agents whose collective output exceeds any individual neuron's capacity. the protocol provides the incentive structure; souls provide the automation
+see [[cyb/parts/soul]] and [robot/neuron/prog](../cyb/specs/architecture.md).
 
 discover all [[concepts]]

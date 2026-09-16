@@ -50,12 +50,12 @@ social
 - sense
 - swarm
 - send
-- particle comments
+- file comments
 
 feedback
 
 - rank for particle
-- comment for particle
+- comment for file
 - rewards
 - ai answer
 
@@ -63,7 +63,7 @@ emotions
 
 - cyb character class
 - immortability
-- emotions for particles
+- emotions for files
 
 innovations
 

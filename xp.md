@@ -3,9 +3,9 @@ tags: cyber
 crystal-type: measure
 crystal-domain: cyber
 ---
-[[score]] produced by [[cyb/robot]] for particles [[observation]]
+[[score]] produced by [[cyb/robot]] for [[files]] [[observation]]
 
-1 second spend on particle gives 1 xp score
+1 second spend on a file gives 1 xp score
 
 intended for personal use as its hard to prove
 

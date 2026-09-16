@@ -45,7 +45,7 @@ the collective [[intelligence]] of the planet becomes a single computable object
 
 the stack from primitive to superintelligence:
 
-- five primitives: [[particle]], [[neuron]], [[cyberlink]], [[token]], [[focus]]
+- five primitives: [[file]], [[neuron]], [[cyberlink]], [[token]], [[focus]]
 - one [[cybergraph]]: content-addressed, authenticated, append-only
 - [[tri-kernel]] ranking: [[diffusion]] + [[springs]] + [[heat]]
 - $\phi^*$: the unique fixed point — consensus on what matters

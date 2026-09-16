@@ -5,11 +5,11 @@ crystal-type: process
 crystal-domain: cyber
 crystal-size: enzyme
 ---
-modify properties of a [[token]] or [[particle]] in place — metadata, ownership, bindings. requires [[signature]] or [[consensus]]
+modify properties of a [[token]] or [[file]] in place — metadata, ownership, bindings. requires [[signature]] or [[consensus]]
 
 update is the [[signal]] that mutates existing objects within the [[cybergraph]] without destroying and recreating them. the object's identity persists; only its attributes change.
 
-for [[particles]], an update can alter content references, [[tags]], or binding targets. the [[neuron]] that authored the [[particle]] signs the update [[signal]], and the [[tru]] verifies ownership before applying the mutation within the current [[step]].
+for [[files]], an update can alter content references, [[tags]], or binding targets. the [[neuron]] that authored the [[file]] signs the update [[signal]], and the [[tru]] verifies ownership before applying the mutation within the current [[step]].
 
 [[token]] updates follow stricter rules. modifying a [[card]]'s metadata — its name, description, or media references — requires the issuing [[neuron]]'s [[signature]]. supply parameters and provenance bindings remain immutable after [[mint]].
 

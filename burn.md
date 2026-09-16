@@ -9,7 +9,7 @@ destroy [[tokens]] permanently. creating [[cyberlinks]] burns [[will]] — the c
 
 burn removes [[tokens]] from circulation irreversibly. once burned, the supply decreases and the destroyed units can never re-enter the [[state]]. the operation achieves [[finality]] within the [[step]] it executes.
 
-the primary burn mechanism in the [[cyber]] protocol is [[cyberlink]] creation. each time a [[neuron]] links two [[particles]] in the [[cybergraph]], the protocol consumes a portion of that [[neuron]]'s [[will]]. this consumption is a burn — the [[will]] is spent and must regenerate from [[locked]] [[coins]] over [[time]].
+the primary burn mechanism in the [[cyber]] protocol is [[cyberlink]] creation. each time a [[neuron]] links two [[files]] in the [[cybergraph]], the protocol consumes a portion of that [[neuron]]'s [[will]]. this consumption is a burn — the [[will]] is spent and must regenerate from [[locked]] [[coins]] over [[time]].
 
 burning [[will]] transforms the [[cybergraph]] into a [[costly signal]] network. every [[cyberlink]] carries proof that a [[neuron]] committed scarce resources to assert a semantic relationship. cheap spam links become economically infeasible at scale.
 

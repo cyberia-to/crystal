@@ -11,6 +11,6 @@ In the [[cyber valley]] plant database, essential oils link [[species]] pages to
 
 Common extraction methods include steam distillation for heat-tolerant compounds and cold pressing for citrus rinds. Solvent extraction and CO2 supercritical methods capture delicate aromatics that distillation would destroy.
 
-Quality assessment relies on gas chromatography profiles, optical rotation, and refractive index. These measurable properties make essential oils suitable for on-chain provenance tracking as verifiable [[particles]] in the [[cybergraph]].
+Quality assessment relies on gas chromatography profiles, optical rotation, and refractive index. These measurable properties make essential oils suitable for on-chain provenance tracking as verifiable [[files]] in the [[cybergraph]].
 
 discover all [[concepts]]

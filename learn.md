@@ -5,7 +5,7 @@ alias: learning, labeling, answer
 crystal-type: process
 crystal-domain: cyber
 ---
-[[create links]] between [[particles]] of [[information]]
+[[create links]] between [[files]] of [[information]]
 
 in a joyful process of [[knowledge mining]]
 

@@ -45,7 +45,7 @@ forgetting in the cybergraph means: removing a [[cyberlink]] from active [[tri-k
 forgetting is not:
 - deleting content from the permanent record
 - invalidating a [[neuron]]'s historical assertion
-- removing a [[particle]] from the content-addressed store
+- removing a [[file]] from the content-addressed store
 - reversing the [[stark]] proof that authenticated the link
 
 the permanent record and the active working set are separate concerns. the cybergraph never deletes. it selectively pays attention.

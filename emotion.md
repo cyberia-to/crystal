@@ -21,7 +21,7 @@ crystal-domain: cyber
 - ## in the protocol
 	- every [[prysm]] component accepts emotion as input
 	- emotion is computed, not assigned: the [[convergence vm]] determines the affective state
-	- a [[prysm/counter]] showing declining [[karma]] glows [[red]]. a successful [[cyberlink]] glows [[green]]. an unexplored [[particle]] glows [[blue]]
+	- a [[prysm/counter]] showing declining [[karma]] glows [[red]]. a successful [[cyberlink]] glows [[green]]. an unexplored [[file]] glows [[blue]]
 	- emotion makes the [[cybergraph]] legible to human perception
 - ## evolutionary basis
 	- the mapping is innate: ancestral environments selected for wavelength-affect bindings that enhanced survival

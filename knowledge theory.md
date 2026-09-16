@@ -6,7 +6,7 @@ crystal-domain: biology
 ---
 framework for understanding [[information]], [[knowledge]], and [[intelligence]]
 
-definition:: [[neurons]] [[link]] [[particles]] in [[time]] is the [[knowledge]]
+definition:: [[neurons]] [[link]] [[files]] in [[time]] is the [[knowledge]]
 
 the chain: data → [[information]] → [[file]] → [[knowledge]] → [[intelligence]]
 

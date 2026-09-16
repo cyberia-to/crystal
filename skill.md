@@ -9,7 +9,7 @@ every [[token]] held is a capability unlocked. [[coins]] grant [[attention]] and
 
 the skill model inverts traditional access control. instead of a central authority granting permissions, the [[token]] itself IS the permission. a [[neuron]] that holds a [[coin]] can spend [[focus]]; a neuron that holds a [[card]] can prove authorship; a neuron that holds a [[score]] can demonstrate reputation. the capability is inseparable from the asset
 
-skills compose. a neuron holding multiple [[tokens]] of different types gains the union of their capabilities. staking a [[coin]] unlocks [[attention]] for [[cyberlinks]]. minting a [[card]] unlocks provenance claims over [[particles]]. accumulating [[karma]] unlocks higher trust weight in the [[tri-kernel]]. each skill layer amplifies the others
+skills compose. a neuron holding multiple [[tokens]] of different types gains the union of their capabilities. staking a [[coin]] unlocks [[attention]] for [[cyberlinks]]. minting a [[card]] unlocks provenance claims over [[files]]. accumulating [[karma]] unlocks higher trust weight in the [[tri-kernel]]. each skill layer amplifies the others
 
 in capability-based security, the holder of the token needs no identity check — possession is authorization. this eliminates access-control lists, role hierarchies, and permission databases. the [[cybergraph]] encodes who can do what through the distribution of [[tokens]] across [[neurons]]
 

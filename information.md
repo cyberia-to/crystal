@@ -8,6 +8,6 @@ reduction of uncertainty. hashing [[data]] collapses "what content?" into a fixe
 
 [[Shannon]] defined it as surprise: H = −Σ p(x) log₂ p(x). his theory stops at the channel. what happens after — naming, linking, inferring structure — is where [[cyber]] begins
 
-[[subject]] of information is [[neuron]]. [[object]] of information is [[particle]]
+[[subject]] of information is [[neuron]]. [[object]] of information is [[file]]
 
 discover all [[concepts]]

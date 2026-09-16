@@ -27,7 +27,7 @@ agds provide exactly these proofs, allowing anyone with minimal bandwidth to aud
 - training layer audits: during massive graph rewrites, agds proofs allow sampling‑based integrity checks rather than full re‑hashing, saving bandwidth and energy
 - agent reasoning: llms embedded in the network can query "are particles a and b connected through topic t?" and get a certificate they can cache for future reasoning
 ### external applications
-- open science provenance: researchers can publish datasets as particles; agds proofs certify citation chains, enabling reproducible meta‑analysis
+- open science provenance: researchers can publish datasets as files; agds proofs certify citation chains, enabling reproducible meta‑analysis
 - supply‑chain transparency: companies append product trails to the cybergraph; customers query origin → destination paths and verify them client‑side
 - cross‑chain bridges: other blockchains can verify cybergraph facts (e.g., focus weight of an address) via light‑client‑sized proofs instead of heavy oracles
 - regulatory compliance: auditors can demand proofs that certain forbidden relationships are absent (negative proofs via authenticated complement paths)

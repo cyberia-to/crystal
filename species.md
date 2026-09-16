@@ -32,12 +32,12 @@ sets
 
   practical spec for encoding the botanical knowledge graph into [[cyber]]
 
-### one species = one particle
+### one species = one file
 
   each of the 205 [[species]] pages in this graph:
 - has content: description, ecology, uses, observations, images
 - gets content-addressed via [[IPFS]] → CID
-- becomes a [[particle]] in [[Bostrom]]
+- becomes a [[file]] in [[Bostrom]]
 - can be [[cyberlinked]] to anything: other species, locations, compounds, observations
 
 example: [[coffea arabica]]
@@ -75,7 +75,7 @@ example: [[coffea arabica]]
 
 - "nitrogen fixing [[tree]]" → ranked list of species by [[relevance]]
 - "companion for [[coffea arabica]]" → species connected by "companion" cyberlinks
-- "medicinal [[fungi]]" → intersection of fungi particles and medicine cyberlinks
+- "medicinal [[fungi]]" → intersection of fungi files and medicine cyberlinks
 - "what grows at 1500m elevation" → location-linked species subgraph
 
 ### bulk encoding

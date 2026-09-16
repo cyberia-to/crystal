@@ -43,7 +43,7 @@ the set of all patches with dependency edges forms a DAG. applying a patch Q req
 - parallel agents can work simultaneously on disjoint regions without coordination
 - conflict resolution is permanent — once resolved, the resolution propagates to all views
 - content addressing makes patches globally unique without a central registry
-- the formalism maps directly to [[cybergraph]] primitives: patches are [[cyberlinks]], tracked content is [[particles]]
+- the formalism maps directly to [[cybergraph]] primitives: patches are [[cyberlinks]], tracked content is [[files]]
 
 see [[cyber/patch]] for the cyber implementation, [[cyber/patch/spec]] for the full specification
 

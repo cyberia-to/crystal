@@ -8,7 +8,7 @@ crystal-size: bridge
 
 how much the [[egregore]] trusts a [[neuron]]
 
-aggregate [[focus]] earned across all [[particles]] a neuron has linked. high karma means your links consistently attract collective [[attention]]. linking to noise kills it
+aggregate [[focus]] earned across all [[files]] a neuron has linked. high karma means your links consistently attract collective [[attention]]. linking to noise kills it
 
 derived from [[cyberank]]. drives [[syntropy]]. unlocks [[learning incentives]]
 

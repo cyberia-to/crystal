@@ -195,7 +195,7 @@ curl -s https://node.bostrom.cybernode.ai/cyber/graph/snapshot?block=23195000 \
 
 ## snapshot identity
 
-a `.graph` file is itself a particle. its identity is
+a `.graph` file is itself a file in the graph. its particle is
 
 ```
 particle(.graph) = hemera(file bytes)

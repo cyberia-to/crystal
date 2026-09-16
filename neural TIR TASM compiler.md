@@ -475,7 +475,7 @@ statrs = "0.17"
 criterion = { version = "0.5", features = ["async_tokio"] }
 ```
 
-No Python. No PyTorch. No C FFI. Training, inference, validation, and online learning run in the same Rust binary as the cyb runtime. The compiled model is callable from [[rune]] executable [[particles]] via the standard `ctx` API.
+No Python. No PyTorch. No C FFI. Training, inference, validation, and online learning run in the same Rust binary as the cyb runtime. The compiled model is callable from [[rune]] executable [[files]] via the standard `ctx` API.
 
 Quantization for deployment (future): Once the model is stable, quantize to Q8 with `burn`'s built-in quantization. At ~10MB, the model fits in L2 cache on M-series; inference latency improves ~2× with Q8 on CPU path. Do not implement in v1.
 

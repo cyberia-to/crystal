@@ -22,11 +22,11 @@ the key insight: when [[markup]] rules are applied to a tree-graph, the result i
 
 cyberspace is built from exactly three primitives:
 
-[[particle]] — the atomic unit. any text-based thing with a content address ([[Hemera|CID]]). a [[particle]] has no inherent meaning — meaning emerges from its position and connections
+[[file]] — the atomic unit. any text-based thing with a content address ([[Hemera|CID]]). a [[file]] has no inherent meaning — meaning emerges from its position and connections
 
-[[cyberlink]] — the directed edge between two [[particles]]. every relation in cyberspace is a [[cyberlink]]. there is no other primitive for connection
+[[cyberlink]] — the directed edge between two [[files]]. every relation in cyberspace is a [[cyberlink]]. there is no other primitive for connection
 
-[[neuron]] — the observer. an agent with a position in the space (`~/`), capable of creating [[particles]] and [[cyberlinks]], and of navigating the space
+[[neuron]] — the observer. an agent with a position in the space (`~/`), capable of creating [[files]] and [[cyberlinks]], and of navigating the space
 
 everything else — paths, names, [[tokens]], actions, dimensions — is derived from these three
 
@@ -75,7 +75,7 @@ every [[neuron]] has a position in cyberspace: `~/`
 
 this is not metaphorical. the [[neuron]]'s home namespace is a real coordinate — a root from which all personal paths extend, a scope within which names resolve, a subject from which all [[cyberlinks]] originate
 
-cyberspace is not view-from-nowhere. it is always observed from a position. the same [[particle]] looks different depending on where you are:
+cyberspace is not view-from-nowhere. it is always observed from a position. the same [[file]] looks different depending on where you are:
 
 - at `^truth` — you see all instantiations below you
 - at `cyber/truth` — you see your domain peers horizontally, the abstract root above you, and homonyms across domains

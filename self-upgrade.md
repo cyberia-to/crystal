@@ -56,7 +56,7 @@ a [[neuron]] cannot forge these proofs. the proofs are verified by every node in
 
 after a valid proposal is published at block $t_0$:
 
-- [[neurons]] have $N_0$ blocks to create stake-weighted "reject" [[cyberlinks]] pointing at the proposal particle
+- [[neurons]] have $N_0$ blocks to create stake-weighted "reject" [[cyberlinks]] pointing at the proposal file
 - if the total staked weight on reject links exceeds threshold $T_0$ by block $t_0 + N_0$, the upgrade is blocked
 - if rejection weight stays below $T_0$, the upgrade applies automatically at $t_0 + N_0$
 

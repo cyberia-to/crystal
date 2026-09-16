@@ -22,7 +22,7 @@ cannot be created or destroyed
 - electrical energy: energy associated with electric charges and their movement
 - nuclear energy: energy stored in the nucleus of an atom
 - radiant energy: energy of electromagnetic waves, including light
-- [[informational energy]]: the energy stored in [[particles]] of [[information]]
+- [[informational energy]]: the energy stored in [[files]] of [[information]]
 - [[knowledge energy]]:: the energy stored in [[cyberlinks]] of [[cybergraph]]
 - [[intelligence energy]]: the energy behind [[black magic]] in [[rm]]
 

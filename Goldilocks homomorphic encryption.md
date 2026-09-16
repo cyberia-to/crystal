@@ -685,4 +685,4 @@ The lookup table over $\mathbb{F}_p$ is the Rosetta Stone — the one mechanism 
 
 Four purposes. One table. One field. One proof.
 
-Within the [[cybergraph]], every [[particle]] linked by a [[neuron]] can carry encrypted payloads verified by this four-pillar stack. The [[focus]] mechanism routes [[cyberlink]] evaluation through the [[tri-kernel]], where [[TFHE]] operations on [[bostrom]] state become first-class citizens alongside ZK, AI, and quantum primitives.
+Within the [[cybergraph]], every [[file]] linked by a [[neuron]] can carry encrypted payloads verified by this four-pillar stack. The [[focus]] mechanism routes [[cyberlink]] evaluation through the [[tri-kernel]], where [[TFHE]] operations on [[bostrom]] state become first-class citizens alongside ZK, AI, and quantum primitives.

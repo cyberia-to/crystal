@@ -6,7 +6,7 @@ crystal-type: entity
 crystal-domain: cyber
 crystal-size: enzyme
 ---
-unique and movable [[token]] that binds provenance to a [[particle]]. a [[neuron]] mints a card to claim authorship, citation, or lineage — transferable [[proof]] on the [[cybergraph]]
+unique and movable [[token]] that binds provenance to a [[file]]. a [[neuron]] mints a card to claim authorship, citation, or lineage — transferable [[proof]] on the [[cybergraph]]
 
 in the [[token]] taxonomy, the card occupies the unique-movable quadrant. unlike a [[coin]] (fungible, interchangeable), each card is a distinct object with its own identity. unlike a [[score]] (immovable), a card can be transferred between [[neurons]], carrying its provenance history with it
 

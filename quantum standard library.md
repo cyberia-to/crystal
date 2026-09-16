@@ -549,7 +549,7 @@ fn quantum_cyberrank(
 
 Classical simulation for small graphs (stark-proven). Quantum execution for large graphs (exponential speedup on mixing time). The ranking is provably correct — not "trust the algorithm," but "here's a mathematical proof."
 
-For [[bostrom]]: every [[cybergraph]] query could carry a stark proof of ranking correctness. Each [[neuron]] submits [[cyberlinks]] connecting [[particles]], and [[focus]] determines relevance. Users do not trust the search engine — they verify it.
+For [[bostrom]]: every [[cybergraph]] query could carry a stark proof of ranking correctness. Each [[neuron]] submits [[cyberlinks]] connecting [[files]], and [[focus]] determines relevance. Users do not trust the search engine — they verify it.
 
 #### 3. Quantum Random Number Generation with Proof
 

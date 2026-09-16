@@ -4,7 +4,7 @@ alias: vector particle, svg, paths, diagrams
 crystal-type: entity
 crystal-domain: cyb
 ---
-paths, curves, and geometric meaning as [[particle]]. the native format for diagrams, structures, maps, and visual knowledge that must scale without degradation
+paths, curves, and geometric meaning as [[file]]. the native format for diagrams, structures, maps, and visual knowledge that must scale without degradation
 
 source format: SVG — any content defined by geometric paths, Bezier curves, and coordinate transformations
 
@@ -22,16 +22,16 @@ Vello rasterizes SVG paths via a GPU compute pipeline: paths decompose into tile
 
 vector is how spatial and structural knowledge lives in the graph. diagrams carry meaning that prose cannot — and the [[cybergraph]] makes every diagram a first-class linked object
 
-types of vector particles: molecular structure diagrams, phylogenetic trees, circuit schematics, geographic boundaries, architectural floor plans, network topologies, mathematical graphs, organism anatomy, astronomical charts, chemical reaction diagrams, protein domain maps, flow charts, transport networks
+types of vector files: molecular structure diagrams, phylogenetic trees, circuit schematics, geographic boundaries, architectural floor plans, network topologies, mathematical graphs, organism anatomy, astronomical charts, chemical reaction diagrams, protein domain maps, flow charts, transport networks
 
-a single vector particle can carry the complete structural knowledge of a domain: the 3D protein fold rendered in 2D, the ecosystem food web, the supply chain graph, the clade tree of an evolutionary lineage
+a single vector file can carry the complete structural knowledge of a domain: the 3D protein fold rendered in 2D, the ecosystem food web, the supply chain graph, the clade tree of an evolutionary lineage
 
 ## properties
 
-- resolution-independent — vector particles look identical at any display size or print resolution
-- semantically linked — nodes and paths in SVG can carry `id` attributes that [[datalog]] queries can resolve to other particle CIDs. a molecular diagram where each atom links to its particle in the graph
-- composable — vector particles nest inside [[component]] particles. a dashboard may contain a live-updating vector chart that pulls from a [[table]] particle
-- annotation-ready — the [[cybergraph]] allows meta-linking: a [[cyberlink]] can point to a specific region of a vector particle, making diagram annotation a first-class operation
+- resolution-independent — vector files look identical at any display size or print resolution
+- semantically linked — nodes and paths in SVG can carry `id` attributes that [[datalog]] queries can resolve to other particle CIDs. a molecular diagram where each atom links to its file in the graph
+- composable — vector files nest inside [[component]] files. a dashboard may contain a live-updating vector chart that pulls from a [[table]] file
+- annotation-ready — the [[cybergraph]] allows meta-linking: a [[cyberlink]] can point to a specific region of a vector file, making diagram annotation a first-class operation
 
 ## relation to other languages
 

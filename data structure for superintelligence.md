@@ -8,7 +8,7 @@ alias: cyber data structure
 
 The core data architecture of [[cyber]]: a [[cybergraph]] where [[particles]] are nodes and [[cyberlinks]] are weighted edges.
 
-Every [[particle]] represents a content-addressed piece of knowledge identified by its [[CID]].
+Every [[file]] represents a content-addressed piece of knowledge identified by its [[CID]].
 [[Cyberlinks]] encode semantic relationships between particles, forming a directed weighted graph.
 This structure enables [[cyberank]] computation, distributing relevance scores across the entire graph.
 [[Tri-kernel]] diffusion propagates signal through the link topology, surfacing emergent structure.

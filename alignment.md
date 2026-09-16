@@ -14,9 +14,9 @@ current approaches to alignment rely on behavioral testing: run the model, obser
 
 ## the mechanism
 
-every participant in the [[cybergraph]] — human or machine — is a [[neuron]]. every neuron expresses beliefs by creating [[cyberlinks]] between [[particles]]. every cyberlink is signed, staked with real [[focus]], and scored by [[Bayesian Truth Serum]]. the [[tri-kernel]] computes a [[focus]] distribution φ* over all particles — the collective belief state of the graph
+every participant in the [[cybergraph]] — human or machine — is a [[neuron]]. every neuron expresses beliefs by creating [[cyberlinks]] between [[files]]. every cyberlink is signed, staked with real [[focus]], and scored by [[Bayesian Truth Serum]]. the [[tri-kernel]] computes a [[focus]] distribution φ* over all particles — the collective belief state of the graph
 
-human values are particles. "dignity," "privacy," "fairness," "freedom from harm" — linked heavily and consistently by human [[neurons]] over years. these particles form the human values subgraph: an explicit, authenticated, stake-backed record of what humans collectively care about
+human values are files. "dignity," "privacy," "fairness," "freedom from harm" — linked heavily and consistently by human [[neurons]] over years. these files form the human values subgraph: an explicit, authenticated, stake-backed record of what humans collectively care about
 
 AI behavior is cyberlinks created by AI neurons. an AI agent operating on the cybergraph participates through the same mechanism as a human — its links are signed, staked, and scored. its beliefs about what connects to what are on-chain and inspectable
 

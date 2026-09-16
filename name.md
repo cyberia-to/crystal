@@ -31,7 +31,7 @@ deterministic:  ~mastercyb/blog   → single latest particle
 a name is a [[cyberlink]] where:
 
 1. from [[particle]] is the name label (content-addressed string, e.g. hash of "blog")
-2. to [[particle]] is the current value (any [[particle]] — a page, an image, a program)
+2. to [[particle]] is the current value (any [[file]] — a page, an image, a program)
 3. resolution picks the to of the latest [[cyberlink]] from this [[neuron]] for this from
 
 updating a name means creating a new [[cyberlink]] with the same from and a different to. the old value remains in history. the latest wins

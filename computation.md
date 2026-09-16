@@ -13,7 +13,7 @@ layers of computation in the protocol:
 - [[cyberlink]] computation — [[neurons]] submit structured claims about [[relevance]]
 - [[zero-knowledge]] computation — [[stark]] proofs compress verification
 
-the [[tru]] is the core computational engine: it reads the full [[cybergraph]] and outputs a ranked [[knowledge]] structure. this makes cyber a general-purpose computation graph where [[particles]] are data and [[cyberlinks]] are operations
+the [[tru]] is the core computational engine: it reads the full [[cybergraph]] and outputs a ranked [[knowledge]] structure. this makes cyber a general-purpose computation graph where [[files]] are data and [[cyberlinks]] are operations
 
 computation in cyber is metered by [[resources]]: [[bandwidth]], [[memory]], [[cycles]]
 

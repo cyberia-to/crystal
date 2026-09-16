@@ -5,4 +5,4 @@ crystal-domain: cyber
 ---
 TODO
 
-[[cybergraph]] ability to probabilistically cache and serve popular [[particles]] charged per file
+[[cybergraph]] ability to probabilistically cache and serve popular [[files]], charged per file

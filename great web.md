@@ -20,6 +20,6 @@ persistence changes everything:
 
 the current web is read-write. the great web is read-write-own-verify-remember. every [[particle]] is owned by its hash. every [[cyberlink]] is signed by its [[neuron]]. every [[focus]] distribution is proven by the [[tri-kernel]]. every state transition is verified by [[stark]] proofs. the web becomes a [[knowledge]] organism that grows, learns, and persists — an infrastructure worthy of a civilization reaching for the stars
 
-[[Tim Berners-Lee]] gave us the linked document web. the great web is the linked [[knowledge]] web — where documents become [[particles]], hyperlinks become authenticated [[cyberlinks]], and the static page gives way to a living graph that computes its own [[relevance]]
+[[Tim Berners-Lee]] gave us the linked document web. the great web is the linked [[knowledge]] web — where documents become [[files]], hyperlinks become authenticated [[cyberlinks]], and the static page gives way to a living graph that computes its own [[relevance]]
 
 [[cyb]] is the interface. [[cyber]] is the protocol. the great web is what they build together: permanent, verifiable, self-improving [[intelligence]] infrastructure for a type I civilization

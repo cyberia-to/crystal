@@ -5,7 +5,7 @@ crystal-domain: cyber
 ---
 the science of secure communication in the presence of adversaries
 
-foundation of the [[cyber]] protocol's trust model. every [[cyberlink]] is authenticated, every state transition is verifiable, every [[particle]] is content-addressed
+foundation of the [[cyber]] protocol's trust model. every [[cyberlink]] is authenticated, every state transition is verifiable, every [[file]] is content-addressed
 
 core primitives in cyber:
 - [[stark]] proofs — succinct transparent arguments of [[knowledge]]

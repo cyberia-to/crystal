@@ -25,7 +25,7 @@ the [[cybergraph]] carries two topological invariants:
 
 focus conservation: Σ φ*(p) = 1 over all particles. this is the integral of the attention form over the graph — the zero-th Betti number of the probability simplex. axiom A5 is a topological conservation law.
 
-content-address immutability: a particle's identity = hash of its content. changing the content changes the identity — there is no continuous path between two different particles. every particle is topologically isolated from every other. axiom A1 is a topological isolation law.
+content-address immutability: a file's identity = hash of its content. changing the content changes the identity — there is no continuous path between two different particles. every particle is topologically isolated from every other. axiom A1 is a topological isolation law.
 
 together these two invariants make the cybergraph a topological space where:
 - particles are topologically isolated points (A1)

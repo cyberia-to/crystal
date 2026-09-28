@@ -29,6 +29,6 @@ necessary graph/content and private custody under their recovery contracts.
 soul alone cannot recreate missing history, live grants or an unknown external
 outcome. [[log]] renders the retained history; [[avatar]] presents the robot.
 
-see [[cyb/parts/soul]] and [robot/neuron/prog](../cyb/specs/architecture.md).
+see [[cy/specs/soul]] and [robot/neuron/prog](../cyb/specs/architecture.md).
 
 discover all [[concepts]]

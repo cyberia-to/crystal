@@ -25,7 +25,7 @@ radio preserves [[iroh]] networking (QUIC, [[radio/hole-punching]], [[radio/rela
 
 | stratum | layer | crate |
 |---|---|---|
-| protocols | [[radio/blob]], [[radio/docs]], [[radio/gossip]], [[radio/willow]] | iroh-blobs, iroh-docs, iroh-gossip, iroh-willow |
+| protocols | [[radio/blob]], [[radio/gossip]] | iroh-blobs, iroh-gossip (iroh-docs and iroh-willow removed 2026-10-07 — reconciliation is [[foculus]]'s) |
 | verified streaming | [[radio/bao]] ([[Hemera]] Merkle trees) | cyber-bao |
 | content identity | sponge, compression, KDF in [[Goldilocks field]] | cyber-poseidon2 |
 | networking | [[radio/endpoint]], [[radio/relay]], [[radio/hole-punching]] | iroh, iroh-relay |
@@ -37,9 +37,7 @@ radio preserves [[iroh]] networking (QUIC, [[radio/hole-punching]], [[radio/rela
 - cyber-hash — CLI hashing tool
 - iroh-blobs — [[radio/blob]] transfer
 - iroh-relay — [[radio/relay]] servers with Hemera handshakes
-- iroh-docs — [[radio/docs]] synchronization
 - iroh-gossip — [[radio/gossip]] protocol
-- iroh-willow — [[radio/willow]] protocol implementation
 
 ## status
 

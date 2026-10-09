@@ -37,7 +37,7 @@ stark proofs are larger than SNARKs but the security model is strictly stronger:
 
 ## zheng goes further
 
-[[zheng]] builds on STARK theory but extends it with HyperNova folding — replacing batch proving with incremental accumulation. the protocol proof object (σ in a [[signal]]) is a HyperNova accumulator (~200 bytes), not a classical STARK proof. validators run `decide()` to verify. see [[zheng]] for the full architecture.
+[[zheng]] builds on STARK theory and replaces batch proving with incremental accumulation: the protocol proof object (σ in a [[signal]]) is an accumulator that validators settle with one `decide()`. the fold and the accumulator size of the retired design were unsound; the repaired accumulation and its measured size live in [[soft3/proposals/proof-system-repair|the proof-system repair]]. see [[zheng]] for the architecture.
 
 see [[zheng/docs/explanation/stark]] for the complete STARK theory, arithmetization, and heritage timeline.
 

@@ -328,9 +328,9 @@ storage: L0 stores full data (cheap, local, ephemeral). L1 stores aggregated sta
 
 relay: mostly horizontal within layers (peer gossip within neighborhoods), with narrow vertical channels between layers (proof submission upward, finality confirmation downward). bandwidth demand is massive within L0, minimal at L3. [[location proof]] determines which neighborhoods form — geographic proximity creates natural L1 clusters.
 
-[[consensus]]: L0 needs none (self-trust). L1 uses lightweight local BFT. L2 uses shard-level [[consensus]]. L3 needs only to verify recursive proofs — near-zero computation, maximum trust. the global singleton state can be constant-size (Mina-like ~22kb) because recursive [[stark]] composition produces fixed-size proofs regardless of the computation being proved.
+[[consensus]]: L0 needs none (self-trust). L1 uses lightweight local BFT. L2 uses shard-level [[consensus]]. L3 needs only to verify recursive proofs — near-zero computation, maximum trust. the global singleton state can be constant-size because recursive [[zheng]] proof composition produces fixed-size proofs regardless of the computation being proved.
 
-### the 22kb global state
+### the constant-size global state
 
 recursive proof composition enables:
 
@@ -349,7 +349,7 @@ the five primitives collapse into two verification types:
 ### state proofs (what you HOLD)
 
 - storage: PoRep / PoST (prove you hold this data right now). see [[storage proofs]]
-- compute: [[stark]] (prove you computed this correctly). see [[cyber/proofs]]
+- compute: [[zheng]] (prove you computed this correctly). see [[cyber/proofs]]
 - [[consensus]]: recursive proof composition (prove the network agreed)
 
 ### flow proofs (what you DID)
@@ -475,7 +475,7 @@ FRACTAL ARCHITECTURE (scaling vision)
 
             LAW: computation compresses as it rises.
                  trust requirements increase.
-                 global state is constant-size (~22kb).
+                 global state is constant-size.
                  layer boundaries emerge from observed hub structure,
                  then are formalized — not designed in advance.
 ```
@@ -492,13 +492,13 @@ priority 3 — [[location proof]]. RTT mesh between all nodes. MDS coordinate em
 
 priority 4 — duration-parameterized storage. unify ephemeral, medium-term, and permanent storage under a single primitive with continuous duration economics. storage fee = f(size, duration, privacy, structure type). see [[storage proofs]].
 
-priority 5 — [[stark]] proof of block execution. every block produces a proof that all state transitions were valid. this is the foundation that enables future scaling — but on single chain it already provides trustless light clients and instant sync. see [[cyber/proofs]].
+priority 5 — [[zheng]] proof of block execution. every block produces a proof that all state transitions were valid. this is the foundation that enables future scaling — but on single chain it already provides trustless light clients and instant sync. see [[cyber/proofs]].
 
 what comes later (the fractal [[consensus]] architecture):
 
 - layer separation — formalize the emergent hub structure into L0/L1/L2/L3 hierarchy
 - sharding — only after observing which geographic/economic clusters communicate densely
-- recursive proof composition — compress planetary activity into O(1) global state (~22kb)
+- recursive proof composition — compress planetary activity into O(1) global state
 - cross-shard [[consensus]] — only after shard boundaries are understood empirically
 
 the principle: build the simplest complete system first. observe what structure emerges. then formalize that structure into architecture.

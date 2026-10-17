@@ -33,7 +33,7 @@ the sequential bottleneck in [[zheng]] proving — each step constrained by the 
 
 each Type II topoisomerase step consumes 2 ATP. this is not waste — it is the thermodynamic cost of creating a topological singularity (the temporary break) and resealing it. the Carnot-like bound: you cannot change a topological invariant without paying energy.
 
-in the [[zheng]] proof system the analog is the verifier's computational cost per step (~5μs). you cannot verify a topological invariant without checking it.
+in the [[zheng]] proof system the analog is the verifier's computational cost per step. you cannot verify a topological invariant without checking it.
 
 [[analogous-to]] [[helix]], [[topological-invariant]], [[zheng]]
 

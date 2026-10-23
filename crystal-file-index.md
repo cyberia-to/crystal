@@ -157,7 +157,6 @@
   media pipeline.md  →  cyber/media pipeline.md
   metagraph comparison.md  →  cyber/metagraph comparison.md
   metagraph.md  →  cyber/metagraph.md
-  mimi.md  →  cyber/mimi.md
   name.md  →  cyber/name.md
   nebu.md  →  cyber/nebu.md
   network load.md  →  cyber/network load.md

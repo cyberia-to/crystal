@@ -581,9 +581,6 @@
   workouts.md  →  cybics/socio/workouts.md
   zero knowledge.md  →  cybics/crypto/zero knowledge.md
 
-## cybland/ (1 files)
-  map.md  →  cybland/map.md
-
 ## eidos/ (1 files)
   terms.md  →  eidos/specs/terms.md
 

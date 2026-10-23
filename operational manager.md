@@ -43,7 +43,6 @@ report system
 
 tools
 
-- mimi president agent in telegraph: still raw
 - telegram groups
 - knowledge graph on github
 - task system on github
